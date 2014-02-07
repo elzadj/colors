@@ -1,0 +1,575 @@
+/**
+* Slyles for colors page.
+* Adaptive but not mobile-first. 
+* Author: elzadj
+**/
+
+/*==============================================================================================
+=                                        MAIN style                                            =
+==============================================================================================*/
+
+
+/*==================================
+=            Fonts                =
+==================================*/
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/Roboto-Black-webfont.eot');
+    src: url('../fonts/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Black-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Black-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/Roboto-Bold-webfont.eot');
+    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/Roboto-Light-webfont.eot');
+    src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-----  End of Fonts ------*/
+
+
+body { 
+	font-family: 'robotobold', sans-serif;
+	font-size: 100%;
+	width: 100%;
+	
+}
+
+.wrapper {
+	background: url('../images/background.jpg') ; 
+	max-width: 1100px;
+	margin: 42px auto;
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+header {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1100px;
+}
+
+
+/*==================================
+=            Navigation            =
+==================================*/
+
+nav {
+	overflow: auto;
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	top: 0;
+	z-index: 1;
+
+}
+
+nav a {	
+	margin-top: 0.909090909%;
+	margin-bottom: 0.909090909%; 
+	color: #df5741;
+	text-decoration: none;	
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	display: inline-block;
+}
+
+nav img {
+	float: left;
+	padding-left: 2.1875em; 
+	padding-right: 0.3125em; 
+	
+}
+
+.social {
+	margin-right: 4.0625em; 
+	min-width: 21.181818182%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;	
+}
+
+.social a img {
+	margin: 0 0.5em 0 0.5em;
+}
+
+.logos {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+
+}
+
+.logos img {
+	margin: 1em 3.125em 0.5em; 
+	
+} 
+
+.logo {
+	display: flex;
+	justify-content: center;
+}
+
+.stat-light {
+	font-family: "robotolight", sans-serif;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.stat-black {
+	font-family: "robotoblack", sans-serif;
+	font-size: 140%;
+}
+
+
+/*=============================================
+=            Some additional classes          =
+=============================================*/
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;	
+}
+
+.text-center {
+	text-align: center;
+}
+
+.upper {
+	text-transform: uppercase; 
+}
+
+.red {
+	color: #f00;
+}
+
+.no-margin {
+	margin: 0 0 0 0;
+}
+
+.win {
+	border-bottom: 0.5em solid green;
+}
+
+.wrong {
+	border-bottom: 0.5em solid red;
+}
+
+.green {
+	color: green;
+}
+
+/*-----  End of additional classes   ------*/
+
+
+/*=============================================
+=               Message Section               =
+=============================================*/
+
+#message {
+	width: 100%;
+	background: url('../images/message_background.jpg');
+	background-repeat: no-repeat;
+	color: #ffffff;
+	-webkit-text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+	-moz-text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+	-ms-text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+	-o-text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+	
+}
+
+#message h1{
+	font-family: 'robotoblack', sans-serif;
+	font-size: 220%;
+	padding-top: 0.5em;
+}
+
+#message h2{
+	font-family: 'robotolight', sans-serif;
+	font-weight: 300;
+	font-size: 145%; 
+	margin-top: 0;
+	margin-bottom: 2%;
+	
+}
+
+#message h3 {
+	font-family: 'open_sansbold', sans-serif;
+	padding-top: 3%; 
+}
+
+#message article {
+	width: 100%;
+	background-color:rgba(255,255,255,0.3);
+	font-family: 'open_sansregular', sans-serif;
+	display: flex;
+}
+
+
+.message-img {
+	margin-top: 2em;
+	padding-left:5%; 
+	padding-right: 2%;
+	margin-bottom: 2em;
+	max-height: 100%;
+
+}
+
+.message-text {
+	width: 45%;
+	padding-top: 1em;
+	padding-right: 3%;
+	margin-left: 2%;
+	max-height: 100%;
+}
+
+/*-----  End of Message Section  ------*/
+
+/*=========================================
+=            Statistic Section            =
+=========================================*/
+
+#statistic {
+
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-bottom: 0;
+	width: 97.727272727%; 
+	background: #fff;
+	-webkit-box-shadow: 0 0 0 15px white, 0 6px 10px gray;
+   	-moz-box-shadow: 0 0 0 15px white, 0 6px 10px gray;
+    box-shadow: 0 0 0 15px white, 0 6px 10px gray;
+}
+
+#statistic h1{
+	font-family: 'robotoblack', sans-serif;
+	margin-top: 0;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	box-shadow: inset 0 0 0 15px white, inset 0 -6px 10px 8px gray;
+}
+
+figcaption p {
+	margin-top: 0;
+}
+
+	/*==========  Adaptive columns  ==========*/
+
+.col-group {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.col-group > div {
+  padding: 1em;
+  float: left;
+  width: 16%;
+}
+
+/*-----  End of Statistic Section  ------*/
+
+
+/*=============================================
+=                 QA Section                  =
+=============================================*/
+
+#qa {
+	margin-top: 5%;
+	padding-bottom: 1em;
+}
+
+#qa h1 {
+	margin-bottom: 0;
+	padding-top: 1%;
+}
+
+	/*==========  Three adaptive columns  ==========*/
+
+.col3 {
+	overflow: hidden;
+ }
+
+.col3 > div {
+	float: left;
+    width: 30%;
+    padding: 0 1em 1em;
+}
+
+	/*==========  Single card section  ==========*/
+
+.card {
+	position: relative;
+	background-color: white;
+	padding: 0 5% 0 5%;
+	margin-top: 7%;
+	margin-bottom: 3%;
+	font-size: 90%;
+	display: inline-block;
+	color: #4c4c4c;
+	max-height: 100%;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4);
+}
+
+.card img {
+	bottom: -13%;
+	right: -5%;
+	position: absolute;
+}
+
+	/*==========  Progress bar styling  ==========*/
+
+#progr {
+	text-align: center;
+}
+
+#progr p {
+	color: #4c4c4c;
+	font-size: 150%;
+	margin-bottom: 0.7%;
+}
+
+
+progress[value] {
+	width: 55%;
+	height: 1.2em;
+	/* Get rid of default border in Firefox. */
+	border: none;
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: red;
+	border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+	background-color: green;
+	border-radius: 5px 0 0 5px;
+}
+
+progress[value]::-moz-progress-bar { 
+	
+	background-color: green;
+	border-radius: 5px 0 0 5px;
+}
+
+progress{
+	background-color: red;
+	border-radius: 5px 5px 5px 5px;
+}
+
+/*-----  End of QA Section  ------*/
+
+/*-------------------------------------  End of MAIN style  ---------------------------------------*/
+
+
+
+
+/*==================================================================
+=            Smartphones (portrait and landscape) style            =
+==================================================================*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+	.logos {
+		display: inline-block;
+	}
+
+	.right {
+		float: none;
+	}
+
+	.logos img {
+		margin: 0 auto; /* 39px/16px; 50px/16px */
+	}
+	
+	#message h1 {
+		font-size: 150%;
+	}
+	
+	#qa h1 {
+		font-size: 150%;
+	}
+	
+	#statistic h1 {
+		font-size: 150%;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		margin: 0.5em 0;
+		padding: 0;
+	}
+	
+	#statistic {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	
+	#message h2 {
+		font-size: 110%;
+		margin-bottom: 0;
+	}
+	
+	#message h3 {
+		padding-top: 0;
+	}
+	
+	.message-text {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	
+	#qa p {
+		margin-top: 0;
+	}
+	
+	.social {
+		margin: 0 auto;
+	}
+	
+	.col-group {
+		display: inline;
+	}
+	 
+	.col-group > div {
+	    float: none;
+	    width: 90%;
+	 }
+	 
+	 .message-text {
+	 	width: 100%;
+	 }
+	
+	 #message {
+		background: url('../images/message_background_mini.jpg');
+	}
+	
+	#message img {
+		display: none;
+	}
+	
+	.col3 > div {
+	    float: none;
+	    width: 90%;
+	    padding: 0 1em 1em;
+	  }
+}
+
+/*-----  End of Smartphones (portrait and landscape) style  ------*/
+
+
+
+
+/*=============================================
+=            Tablets/Smartphones style        =
+=============================================*/
+
+
+@media screen and (min-width: 481px) and  (max-width: 768px){
+
+	.logo img {
+		margin-left: 1em;
+	}	
+	
+	.col3>div {
+		width: 43%;
+	}
+
+	.stat-black {
+		font-size: 100%;
+	}
+}
+
+/*-----  End of Tablets/Smartphones style  ------*/
+
+
+/*============================================================
+=            iPads (portrait and landscape) style            =
+============================================================*/
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+  
+	.col-group > div {
+	    float: left;
+	    width: 23.3333333%;
+	}
+
+	.col-group > div:nth-child(3n+1) {
+	  clear: left;
+	}
+
+	.col-group > div:nth-child(odd) {
+	  clear: none;
+	}
+	
+	.col3 {
+		display: flex;
+	}	
+}
+
+/*-----  End of iPads (portrait and landscape) style  ------*/
