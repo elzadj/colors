@@ -3,7 +3,7 @@ colors
 
 Adaptive web page
 
-THANKS
+thanks
 ======
 
 For: Royalty Free Stock Images: Color splash
@@ -18,7 +18,7 @@ For: Freebie Social Network Icon Set
 Name: Hongkiat
 Url: http://www.hongkiat.com/blog/social-network-icon-set/
 
-SITE
+site
 ======
 
 Standards: HTML5, CSS3.
